@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    // vscode
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // project
+    "outDir": "compile",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+  },
+}

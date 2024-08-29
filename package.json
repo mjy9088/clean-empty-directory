@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "clean-empty-directory",
+  "type": "module",
+  "version": "1.0.1",
+  "bin": {
+    "clean-empty-directory": "./index.js"
+  },
+  "scripts": {
+    "publish": "rimraf dist compile && tsc && mkdirp dist && cpy README.md dist && rollup -c && package-json-minifier && cd dist && npm publish"
+  },
+  "author": "Juyeong Maing <mjy9088@naver.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjy9088/clean-empty-directory.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^20.0.0",
+    "cpy-cli": "^5.0.0",
+    "mkdirp": "^3.0.1",
+    "package.json-minifier": "^0.0.4",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.21.1",
+    "rollup-plugin-shebang-bin": "^0.0.7",
+    "typescript": "^5.0.0"
+  }
+}
