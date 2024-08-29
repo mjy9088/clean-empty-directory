@@ -1,13 +1,13 @@
-# clean-empty-js
+# clean-empty-directory
 
-`clean-empty-js` is a Node.js CLI tool written in TypeScript that removes JavaScript files which contain only the empty output of `tsc`.
+`clean-empty-directory` is a Node.js CLI tool written in TypeScript that removes empty directory recursively.
 
 ## Usage
 
-After running `tsc`, run the following command:
+For example: after running `tsc`, run the following command:
 
 ```shell
-npx clean-empty-js "dist/**/*.js"
+npx clean-empty-directory "dist"
 ```
 
-This will remove JavaScript files without meaningful content, keeping your build directory clean.
+This will remove empty directory recursively, keeping your build directory clean.
