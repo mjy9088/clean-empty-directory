@@ -7,7 +7,7 @@
 For example: after running `tsc`, run the following command:
 
 ```shell
-npx clean-empty-directory "dist"
+npx clean-empty-js "dist/**/*.js" "dist/**/*.d.ts" && npx clean-empty-directory "dist"
 ```
 
 This will remove empty directory recursively, keeping your build directory clean.
